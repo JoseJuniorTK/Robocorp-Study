@@ -1,0 +1,29 @@
+WARNING:root:This is a deprecated import that will be removed in favor of RPA.Browser.Selenium
+Traceback (most recent call last):
+  File "c:\Users\jrk15\Downloads\example-simple-web-scraper-main\example-simple-web-scraper-main\tasks.py", line 25, in <module>
+    main()
+  File "c:\Users\jrk15\Downloads\example-simple-web-scraper-main\example-simple-web-scraper-main\tasks.py", line 19, in main
+    store_web_page_content()
+  File "c:\Users\jrk15\Downloads\example-simple-web-scraper-main\example-simple-web-scraper-main\tasks.py", line 11, in store_web_page_content
+    desktop.click('ocr:"Politics"')
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\mouse.py", line 134, in click
+    match = self.ctx.wait_for_element(locator)
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\finder.py", line 342, in wait_for_element
+    return self.find_element(locator)
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\finder.py", line 298, in find_element
+    matches = self.find_elements(locator)
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\finder.py", line 281, in find_elements
+    return self._resolver.dispatch(str(locator))
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\core\locators\syntax.py", line 260, in dispatch
+    return sorted(self._resolve(root))
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\core\locators\syntax.py", line 273, in _resolve
+    return func(value)
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\core\locators\syntax.py", line 325, in _locator
+    return self.finder(self.current, locator)
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\finder.py", line 102, in _find
+    return finder(base, locator)
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\finder.py", line 191, in _find_ocr
+    ensure_recognition()
+  File "C:\ProgramData\robocorp\ht\6cda73b_b1f3c24_1c0bc041\lib\site-packages\RPA\Desktop\keywords\finder.py", line 36, in ensure_recognition
+    raise ValueError(
+ValueError: Locator type not supported, please install the rpaframework-recognition package
